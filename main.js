@@ -1,7 +1,7 @@
-var generateBtn = document.querySelector("#generate-btn");
-var quote = document.querySelector(".quote");
-var author = document.querySelector(".author");
-var loader = document.querySelector(".loader");
+let generateBtn = document.querySelector("#generate-btn");
+let quote = document.querySelector(".quote");
+let author = document.querySelector(".author");
+let loader = document.querySelector(".loader");
 
 let quoteFetch = async () => {
   quote.innerHTML = "";
