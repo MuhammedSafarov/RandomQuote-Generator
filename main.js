@@ -10,7 +10,7 @@ let quoteFetch = async () => {
     .then((data) => {
       let randomQuote = data[Math.floor(Math.random() * data.length)];
       quote.innerHTML += randomQuote.text;
-      author.innerHTML += randomQuote.author;
+      author.innerHTML += "~ " + randomQuote.author;
     });
 };
 
