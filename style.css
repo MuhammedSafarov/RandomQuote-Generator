@@ -13,7 +13,6 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #1f1f1f;
-  height: 50vh;
   width: 40rem;
   margin-top: 10%;
   padding: 15px;
@@ -21,10 +20,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.container h1 {
+  margin: 10px;
+}
 .quote-box {
   color: white;
   width: 95%;
-  margin: 10px;
+  margin: 20px;
   margin-top: 20px;
   padding: 15px;
   padding-left: 2.2rem;
@@ -65,4 +67,40 @@ body {
   background-color: orange;
   transition: ease-in-out 0.2s;
   cursor: pointer;
+}
+
+/* Loader */
+.loading-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.loader {
+  display: none;
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid orange;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
