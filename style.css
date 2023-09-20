@@ -25,14 +25,16 @@ body {
   color: white;
   margin: 10px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 15px;
+  padding-left: 2.2rem;
   border: 1px solid orange;
   border-radius: 10px;
 }
 .quote {
-  font-size: 25px;
+  font-size: 22px;
   font-family: cursive;
-  margin: 10px;
+  margin: 5px;
+  padding: 10px;
 }
 .author {
   font-size: 16px;
@@ -43,8 +45,22 @@ body {
 .container h1 {
   color: orange;
 }
-.generate-btn{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#generate-btn {
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 10px;
+  background-color: transparent;
+  color: orange;
+  width: 7rem;
+}
+#generate-btn:hover {
+  color: white;
+  background-color: orange;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
