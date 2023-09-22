@@ -11,6 +11,9 @@ let quoteFetch = async () => {
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("quotes", JSON.stringify(data));
+    })
+    .catch((error) => {
+      throw error;
     });
 };
 quoteFetch();
