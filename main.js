@@ -20,7 +20,7 @@ storage = JSON.parse(localStorage.getItem("quotes"));
 let eventHandler = () => {
   quote.innerHTML = "";
   author.innerHTML = "";
-  var randomQuote = storage[Math.floor(Math.random() * storage.length)];
+  let randomQuote = storage[Math.floor(Math.random() * storage.length)];
   quote.innerHTML += randomQuote.text;
   author.innerHTML += "~ " + randomQuote.author;
 };
